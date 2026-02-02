@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Sale Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #e4e4e4;
+        padding: 30px;
+      }
+
+      .form-box {
+        background: white;
+        padding: 20px;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 8px;
+      }
+
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .car-info img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: green;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background: black;
+        color: gold;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-box">
+      <h2 style="color: orangered; text-align: center;">Car Sales</h2>
+
+      <!-- Buyer Info -->
+      <input type="text" id="fullname" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+
+      <!-- Car Select -->
+      <select id="carSelect">
+        <option value="">Select your car</option>
+        <option value="lamborghini">Lamborghini Aventador</option>
+        <option value="dodge">Dodge Challenger SRT</option>
+        <option value="ferrari">Ferrari F40</option>
+        <option value="rolls">Rolls-Royce</option>
+        <option value="mclaren">McLaren</option>
+        <option value="landcruiser">Land Cruiser</option>
+      </select>
+
+      <div class="car-info" id="carInfo"></div>
+
+      <button id="submitBtn">Submit</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
