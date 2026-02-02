@@ -1,4 +1,3 @@
-// HEL ELEMENTS
 const carSelect = document.getElementById("carSelect");
 const carInfo = document.getElementById("carInfo");
 const nameInput = document.getElementById("fullname");
@@ -6,7 +5,7 @@ const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
 const submitBtn = document.getElementById("submitBtn");
 
-// CAR DATA
+
 const cars = {
   lamborghini: { price: "$900,000", image: "lamborghini aventador.jpg" },
   dodge: { price: "$100,000", image: "Dodge Challenger SRT Super Stock.jpg" },
@@ -16,7 +15,7 @@ const cars = {
   landcruiser: { price: "$57,200", image: "land-cruiser.jpg" }
 };
 
-// SHOW CAR INFO
+
 carSelect.addEventListener("change", function () {
   const selectedCar = carSelect.value;
 
@@ -61,4 +60,5 @@ submitBtn.addEventListener("click", function (e) {
     }`
   );
 });
+
 
