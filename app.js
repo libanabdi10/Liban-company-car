@@ -51,7 +51,7 @@ submitBtn.addEventListener("click", function (e) {
   const selectedCar = carSelect.value;
 
   if (!name || !email || !phone || !selectedCar) {
-    alert("Fadlan buuxi dhammaan fields-ka oo dooro baabuur 🚗");
+    alert("Fadlan buuxi dhammaan fields-ka oo dooro baabuur");
     return;
   }
 
@@ -61,3 +61,4 @@ submitBtn.addEventListener("click", function (e) {
     }`
   );
 });
+
